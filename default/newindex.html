@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+    </style>
+    <script>
+        function getArg(){
+            var argLen=arguments.length;
+            window.alert("参数长度是："+argLen);
+            if(argLen>0){
+                for(i=0;i<argLen;i++){
+                    window.alert("参数["+(i+1)+"]是："+arguments[i]);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    getArg(1,2,3,4,5)
+</script>
+</body>
+</html>

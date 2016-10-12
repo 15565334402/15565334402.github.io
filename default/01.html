@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>切换</title>
+    <style>
+        .contain{margin: -8px;}
+        .head{height: 40px;background-color: orangered;}
+        .content{height: 580px;}
+        .left{float: left;}
+        .box{width: 150px;height: 40px;background-color: cornflowerblue;margin: 20px;border-bottom: 1px solid #fff;}
+        .day{color: white;font-size: 15px;font-family: "微软雅黑";font-weight: bold;padding: 10px 40px;display: block;}
+        .co{width: 150px;height: 40px;background-color: cornflowerblue;margin: -20px 20px;border-bottom: 1px solid #fff;z-index: 999;}
+        .thing{float: left;margin-left: 20px;margin-top: -20px;display: none;}
+        .done{width: 150px;height: 40px;background-color: cornflowerblue;}
+        .have{color: white;font-size: 15px;font-family: "微软雅黑";font-weight: bold;padding: 10px 40px;display: block;}
+        .will{width: 150px;height: 40px;background-color: cornflowerblue;}
+        .dai{color: white;font-size: 15px;font-family: "微软雅黑";font-weight: bold;padding: 10px 40px;display: block;}
+        .plan{width: 150px;height: 40px;background-color: cornflowerblue;}
+        .planning{color: white;font-size: 15px;font-family: "微软雅黑";font-weight: bold;padding: 10px 40px;display: block;}
+        .right{float: right;margin-right: 20px;margin-top: 20px;}
+        .box1,.box2,.box3{;display: block;margin-right: 500px;display: none;}
+        .foot{height: 40px;background-color: #cccccc}
+    </style>
+</head>
+<body>
+<div class="contain">
+    <div class="head"></div>
+    <div class="content">
+        <div class="left">
+            <div class="box">
+                <span class="day">日常办公</span>
+            </div>
+            <div class="thing">
+                <div class="done">
+                    <span class="have">已办事项</span>
+                </div>
+                <div class="will">
+                    <span class="dai">待办事项</span>
+                </div>
+                <div class="plan">
+                    <span class="planning">发电计划</span>
+                </div>
+            </div>
+            <div class="co">
+                <span class="day">日常办公</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="box1">
+                <input type="text" value="请填写">
+            </div>
+            <div class="box2">
+                <input type="text" value="111">
+            </div>
+            <div class="box3">
+                <input type="text" value="222">
+            </div>
+        </div>
+    </div>
+    <div class="foot"></div>
+    <script src="libs/jquery/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+            slideMenu();
+            show();
+        });
+        function slideMenu(){
+            $(".box").on("click",function(){
+                $(".thing").toggle();
+            });
+        };
+        function show(){
+            $(".done").on("click",function(){
+                $(".box1").show();
+                $(".box1").siblings().hide();
+            });
+            $(".will").on("click",function(){
+                $(".box2").show();
+                $(".box2").siblings().hide();
+            });
+            $(".plan").on("click",function(){
+                $(".box3").show();
+                $(".box3").siblings().hide();
+            });
+        };
+    </script>
+</div>
+</body>
+</html>

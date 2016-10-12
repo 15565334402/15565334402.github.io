@@ -1,0 +1,114 @@
+
+body
+{
+    background-image:url("view/image/bg-image.png");
+}
+.head{
+    float: left;
+}
+.img
+{
+    float: left;
+    margin-top: 60px;
+    margin-left:70px;
+}
+.user{
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    margin-top: -40px;
+    margin-left: 120px ;
+}
+.login
+{
+    position:absolute;
+    top:40%;left:40%;;
+    border:1px solid #7dcfdd;
+    border-radius: 8px;
+    background: rgba(21,120,152,0.8);
+    width:300px;
+}
+.username
+{
+    margin:15px 0;
+}
+.password
+{
+    margin-top:15px;
+}
+.info
+{
+    height: 20px;
+    display: none;
+    color: red;
+    width: 55%;
+    font-family: 微软雅黑;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 90px;
+    margin-bottom: -12px;
+}
+.loginbutton
+{
+    text-align: center;
+    margin:15px 0;
+}
+.title,.value
+{
+    float:left;
+}
+.title
+{
+    width:30%;
+    text-align: right;
+    color: #fff;
+    font-family: 微软雅黑;
+    font-size: 20px;
+}
+.title span
+{
+    margin-right: 15px
+;}
+.value
+{
+    width:70%;
+    text-align: left;
+}
+.value input
+{
+    width:80%;
+    height: 20px;
+    border:1px solid #7dcfdd;
+    border-radius: 5px;
+}
+.clear
+{
+    clear:both;
+}
+.loginbutton .login-btn
+{
+    width:80%;
+    height: 30px;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    background-color: #fff;
+    border:1px solid #7dcfdd;
+    border-radius: 5px;
+}
+.login-btn:hover
+{
+    background-color: #113879;
+    color: #fff;
+}
+.foot
+{
+    float: right;
+    margin:550px 70px;
+}
+.quanxian
+{
+    font-size: 15px;
+    font-family: 微软雅黑;
+    color: #fff;
+}

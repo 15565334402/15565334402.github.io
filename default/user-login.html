@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style type="text/css">
+        *{padding: 0;margin: 0;}
+        html{height: 100%;}
+        body{height: 100%;}
+        .contain{height: 100%;}
+        .head img{width: 100px;height: 100px;}
+        .content{background: url("view/image/img-01.png");background-size: 100%;background-repeat:no-repeat;width: 100%;height: 85%;}
+        .login{float: left;height: 50%;width: 30%;margin: 50px 60px;border: 1px solid #c0c0c0;background: #fff;}
+        .username input{height: 30px;width: 60%;margin: 35px 5vw;border-radius: 6px;border: 1px solid #c0c0c0 ;
+                          font-family: "Microsoft YaHei";color: #9d9d9d;}
+        .password input{height: 30px;width: 60%;margin: 10px 5vw;border-radius: 6px;border: 1px solid #c0c0c0 ;
+            font-family: "Microsoft YaHei";color: #9d9d9d;}
+        .info span{font-family: "Microsoft YaHei";color: darkred;margin: 15px 5vw;display: none;}
+        .button button{height: 35px;width: 60%;margin: 30px 5vw;border-radius: 6px;border: 1px solid #c0c0c0 ;
+            font-family: "Microsoft YaHei";color: #fff;background: darkred;}
+        .button button:hover{color: #000;background: #fff;}
+    </style>
+</head>
+<body>
+   <div class="contain">
+       <div class="head">
+           <img src="view/image/shopPlatform-logo.jpg">
+       </div>
+       <div class="content">
+           <div class="login">
+               <div class="username">
+                  <input type="text" value="手机号/会员名/邮箱">
+               </div>
+               <div class="password">
+                   <input type="text" value="密码">
+               </div>
+               <div class="info">
+                   <span>用户名或密码不正确！</span>
+               </div>
+               <div class="button">
+                   <button>登录</button>
+               </div>
+           </div>
+       </div>
+   </div>
+<script src="libs/jquery/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        init_login();
+    })
+    function init_login(){
+        $(".button button").click(function(){
+            var username=$(".username").find("input").val();
+            var password=$(".password").find("input").val();
+            init_login_in(username,password);
+        })
+    }
+    function init_login_in(username,password){
+        var user={"user1":"aaaaaa","user2":"bbbbbb","user3":"cccccc"};
+        if(user[username]){
+            if(user[username]==password){
+                location.href="index.html"
+            }else {
+                $(".info span").show();
+            }
+
+        }else {
+            $(".info span").show().html("账号错误！");
+        }
+    }
+</script>
+</body>
+</html>

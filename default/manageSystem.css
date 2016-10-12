@@ -1,0 +1,221 @@
+.head
+{
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#35a9d0), to(rgba(24, 94, 156, 1)));
+    height: 70px;
+}
+.logo
+{
+    float: left;
+    padding-top: 20px;
+    padding-left: 40px;
+    font-size: 50px;
+    color: #fff;
+}
+.title
+{
+    float: left;
+    padding: 15px 10px;
+    color: #fff;
+}
+.zhong
+{
+    font-size: 25px;
+    font-family: 微软雅黑;
+}
+.eng{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 微软雅黑;
+}
+.nav
+{
+    float: left;
+    margin: 40px 100px;
+}
+.user
+{
+    color: #fff;
+    font-size: 10px;
+    font-family: 微软雅黑;
+}
+.password,.exit
+{
+    margin-left: 150px;
+}
+.nav a
+{
+    color: #fff;
+    font-size: 10px;
+    font-family: 微软雅黑;
+}
+.clear
+{
+    clear: both;
+}
+.content
+{
+    background-color:#e5ecfc;
+}
+.menu
+{
+    float: left;
+    border: 1px solid #d9d9d9;
+    height: 500px;
+    width: 11%;
+    margin-top: -20px;
+}
+.control
+{
+    float: left;
+    color: #223b63;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    background-color: #e6eff8;
+    border-bottom: 1px solid #d9d9d9;
+}
+.open
+{
+    float: right;
+   margin-right: -65px;
+  margin-top: -26px;
+}
+.caret
+{
+    float: right;
+    margin: -15px 15px;
+}
+.system
+{
+    float: left;
+    text-align: left;
+    width: 150px;
+}
+.operate
+{
+    border-bottom: 1px solid #d9d9d9;
+
+}
+.operate:hover
+{
+    background-color: #0e90d2;
+}
+.operate a:hover
+{
+    color: #fff;
+}
+.for
+{
+    float: right;
+    margin-top: -12px;
+}
+.info
+{
+    float: left;
+    border: 1px solid #d9d9d9;
+    height: 500px;
+    width: 87%;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+.page
+{
+    height: 30px;
+    width: 100%;
+    background-color: #e6eff8;
+    border-bottom: 1px solid #d9d9d9;
+}
+.nav-tabs
+{
+    margin-left: 5px;
+}
+.btn-primary
+{
+   margin-left: 5px;
+}
+.search
+{
+    height: 40px;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #d9d9d9;
+}
+.add
+{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-right: 1px solid #d9d9d9;
+    padding-right: 18px;
+}
+.form-control
+{
+    float: left;
+    margin-left: 700px;
+    margin-top: 5px;
+}
+.input-group-btn
+{
+    float: left;
+    margin-left: 0;
+    margin-top: 5px;
+}
+.link
+{
+    color: darkred;
+}
+.footer
+{
+    background-color:  #f4f4f4;
+    height: 40px;
+    width: 100%;
+    margin-top: -20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.select
+{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.box
+{
+    height: 30px;
+    width: 50px;
+}
+.pagination
+{
+    list-style: none;
+}
+.input
+{
+    height: 1px;
+    width: 15px;
+}
+.pagination li
+{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.now
+{
+    float: right;
+    margin: 10px 20px;
+}
+.foot
+{
+    height: 30px;
+    background-color: #24a1cd;
+    margin-top: 500px;
+}
+.text
+{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}

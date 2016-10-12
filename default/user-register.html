@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style type="text/css">
+        * {margin: 0;padding: 0;}
+        html {height: 100%;}
+        body {height: 100%;}
+        .contain {height: 100%;width: 100%;}
+        .content{height: 75%;}
+        .head {height: 35px;width: 100%;background-color: #000;}
+        .wellcome,.login {float: left;font-size: 13px;font-family: "Microsoft YaHei";margin-top: 8px;margin-left: 50px;color: #fff;}
+        .login {border-right: 1px solid #fff;padding-right: 25px;}
+        .register{float: left;font-size: 13px;font-family: "Microsoft YaHei";margin-top: 8px;margin-left:25px;color: #fff;}
+        a {text-decoration: none;color: #fff;}
+        .login a:hover,.register a:hover{color:darkred;}
+        .phoneNumber {float: right;font-size: 13px;font-family: "Microsoft YaHei";margin-top: 8px;margin-right:50px;color: #fff;}
+        .center a,.account a{float: right;font-size: 13px;font-family: "Microsoft YaHei";margin-right:50px;display: block;height: 35px;
+            width: 80px;line-height: 35px;text-align: center;}
+        .center a:hover,.account a:hover {color:darkred;border-bottom: 2px solid darkred;background: #9d9d9d;}
+        .logo img{height: 100px;width: 100px;margin: 0 50px;float: left;}
+        .shop{font-size: 30px;font-family: "Microsoft YaHei";margin-top: 20px;}
+        .plat{font-size: 15px;font-family: "Microsoft YaHei";color: darkred;}
+        .clear{clear:both;}
+        .header{background: darkred;height: 30px;width: 80%;margin-left: 10vw;margin-top: 50px}
+        .new-register{float: left;font-size: 12px;color: #fff;margin: 8px 30px;}
+        .login-in{float: right;font-size: 12px;color: #fff;margin: 8px 30px;}
+        .login-in a{color: #0e90d2;}
+        .register-in{height: 70%;width: 50%;margin:4vw 23vw;border: 1px solid #9d9d9d;}
+        .username,.set-password,.password,.mail,.submit{width: 100%;height: 15%;margin: 20px 150px;}
+        .username .text,.set-password .text,.password .text,.mail .text{font-family: "Microsoft YaHei";font-size: 18px;float: left;}
+        .username input{width: 45%;height: 28px;border: 1px solid #9d9d9d;border-radius: 5px;margin-left: 18px;}
+        .set-password input{width: 45%;height: 28px;border: 1px solid #9d9d9d;border-radius: 5px;}
+        .password input{width: 45%;height: 28px;border: 1px solid #9d9d9d;border-radius: 5px;}
+        .mail input{width: 45%;height: 28px;border: 1px solid #9d9d9d;border-radius: 5px;margin-left: 38px;}
+        .username .word,.set-password .word,.password .word,.mail .word{font-family: "Microsoft YaHei";font-size: 12px;margin-left: 88px;}
+        .submit button{font-family: "Microsoft YaHei";font-size: 18px;margin-left: 90px;width: 45%;background: darkred;color: #fff;height: 28px;
+            border: 1px solid #9d9d9d;border-radius: 5px;}
+        .submit button:hover{background: #fff;color: #000;}
+    </style>
+</head>
+<body>
+<div class="contain">
+    <div class="head">
+        <span class="wellcome">您好！欢迎光临XXX电商平台</span>
+        <span class="login"><a href="#">登录</a></span>
+        <span class="register"><a href="#">注册</a></span>
+        <span class="phoneNumber">全国销售热线400-8888888</span>
+        <span class="center"><a href="#">卖家中心</a></span>
+        <span class="account"><a href="#">我的账号</a></span>
+    </div>
+    <div class="clear"></div>
+    <div class="logo">
+        <img src="view/image/shopPlatform-logo.jpg">
+        <div class="shop">E时代网上商城</div>
+        <div class="plat">官方电子商务平台</div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <span class="new-register">注册新用户</span>
+            <span class="login-in">我已经注册，现在<a href="#">登录</a></span>
+        </div>
+        <div class="register-in">
+            <div class="username">
+                <div class="text">
+                    <span>用户名：</span>
+                </div>
+                <div class="input">
+                    <input type="text">
+                </div>
+                <div class="word">
+                    <span>您登录后的名称，不要超过15个字符</span>
+                </div>
+            </div>
+            <div class="set-password">
+                <div class="text">
+                    <span>设置密码：</span>
+                </div>
+                <div class="input">
+                    <input type="text">
+                </div>
+                <div class="word">
+                    <span>请输入6-20位密码，（A-Z,a-z，0-9，不要输入空格）</span>
+                </div>
+            </div>
+            <div class="password">
+                <div class="text">
+                    <span>确认密码：</span>
+                </div>
+                <div class="input">
+                    <input type="text">
+                </div>
+                <div class="word">
+                    <span>请再次输入密码</span>
+                </div>
+            </div>
+            <div class="mail">
+                <div class="text">
+                    <span>邮箱：</span>
+                </div>
+                <div class="input">
+                    <input type="text">
+                </div>
+                <div class="word">
+                    <span>请使用一个有效邮箱</span>
+                </div>
+            </div>
+            <div class="submit">
+                <button>提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
